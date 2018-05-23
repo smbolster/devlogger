@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {FormsModule} from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { LogFormComponent } from './components/log-form/log-form.component';
@@ -17,7 +17,7 @@ import { LogService } from './services/log.service';
     NavbarComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,FormsModule
   ],
   providers: [LogService],
   bootstrap: [AppComponent]
